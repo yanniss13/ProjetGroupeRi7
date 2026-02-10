@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTUALITÉS // VALORANT</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<header class="val-navbar">
+
+    <!-- Menu PC -->
+    <nav class="nav-links">
+        <a href="index.html" class="nav-item">ACCUEIL</a>
+        <a href="Valorant.html" class="nav-item active">VALORANT</a>
+        <!-- Mets la classe 'active' sur la page en cours -->
+        <a href="minecraft.html" class="nav-item">MINECRAFT</a>
+        <a href="resident-evil.html" class="nav-item">RESIDENT EVIL</a>
+    </nav>
+
+    <!-- Menu Burger -->
+    <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">ACCUEIL</a>
+        <a href="news.html">VALORANT</a>
+        <a href="minecraft.html">MINECRAFT</a>
+        <a href="resident-evil.html">RESIDENT EVIL</a>
+    </div>
+</header>
+
+<body>
+    <script>
+        const burger = document.getElementById('burger-menu');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+        });
+    </script>
+</body>

@@ -92,3 +92,118 @@ main {
 .btn:hover {
     background: #e63946;
 }
+
+/* --- NAVBAR VALORANT --- */
+.val-navbar {
+    background-color: #0f1923; /* Noir Valorant */
+    border-bottom: 1px solid #333;
+    padding: 0 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    color: #ece8e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #ff4655;
+}
+
+/* Petit trait rouge au survol */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4655;
+    transition: width 0.3s;
+}
+
+.nav-item:hover::after, .nav-item.active::after {
+    width: 100%;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #ece8e1;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #0f1923;
+    border-bottom: 2px solid #ff4655;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.mobile-nav.open {
+    display: flex;
+}
+
+.mobile-nav a {
+    color: #ece8e1;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+}
+
+.mobile-nav a:hover {
+    color: #ff4655;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .nav-links{
+        display: none; 
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .val-navbar {
+        padding: 0 20px;
+    }
+}
