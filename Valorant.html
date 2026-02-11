@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTUALITÉS // VALORANT</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="val-navbar">
+
+    <!-- Menu PC -->
+    <nav class="nav-links">
+        <a href="index.html" class="nav-item">ACCUEIL</a>
+        <a href="Valorant.html" class="nav-item active">VALORANT</a>
+        <!-- Mets la classe 'active' sur la page en cours -->
+        <a href="minecraft.html" class="nav-item">MINECRAFT</a>
+        <a href="resident-evil.html" class="nav-item">RESIDENT EVIL</a>
+    </nav>
+
+    <!-- Menu Burger -->
+    <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">ACCUEIL</a>
+        <a href="news.html">VALORANT</a>
+        <a href="minecraft.html">MINECRAFT</a>
+        <a href="resident-evil.html">RESIDENT EVIL</a>
+    </div>
+</header>
+<main class="news-container">
+    
+    <h2 class="section-title">DERNIÈRES ACTUALITÉS</h2>
+
+    <!-- Article à la une : Patch 12.02 (Vrai patch actuel) -->
+    <article class="news-hero">
+        <div class="news-image-wrapper">
+            <!-- Image officielle d'Harbor (agent modifié dans ce patch) -->
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/438bc507ebfd81f23c73f1868400025dec5444ff-1920x1080.jpg?accountingTag=VAL&auto=format&fit=fill&q=80&w=1184" alt="Harbor/Reyna Update">
+            <span class="news-tag">MISE À JOUR</span>
+        </div>
+        <div class="news-content">
+            <span class="news-date">02 FÉVR 2026</span>
+            <h3>NOTES DE PATCH 12.02</h3>
+            <p>Ajustements majeurs pour Harbor et Reyna. Découvrez les nouveaux indicateurs de dégâts et les corrections de bugs sur les compétences déployables.</p>
+            <a href="https://playvalorant.com/fr-fr/news/game-updates/valorant-patch-notes-12-02/" target="_blank" class="btn-read">LIRE LE PATCH NOTE</a>
+        </div>
+    </article>
+
+    <!-- Grille des autres actus -->
+    <section class="news-grid">
+        
+        <!-- News 1 : Skins Ayakashi (Vrais skins du moment) -->
+        <article class="news-card">
+            <div class="card-image">
+                <img src="https://maisesports.com.br/_next/image?url=https%3A%2F%2Fnoticias.maisesports.com.br%2Fwp-content%2Fuploads%2F2026%2F01%2Fnovas-skins-Ayakashi-valorant.jpg&w=828&q=75" alt="Skin Ayakashi">
+            </div>
+            <div class="card-content">
+                <span class="news-tag-small">SKINS</span>
+                <span class="news-date">03 FÉVR 2026</span>
+                <h4>COLLECTION AYAKASHI</h4>
+                <p>Devenez le méchant avec la nouvelle collection Ayakashi pour Phantom et Ghost.</p>
+                <a href="https://www.youtube.com/watch?v=RovPDUD0t7A" target="_blank" class="link-arrow">Voir la collection -></a>
+            </div>
+        </article>
+
+        <!-- News 2 : VCT Kickoff 2026 (Vrai tournoi en cours) -->
+        <article class="news-card">
+            <div class="card-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOl9ukaB9Uv3uFin-tkxI69j6xlMO355-d6cBVTRrM7HyoYqbwy-403ENki88U4wT5U9tZqxnBQtn_-cAHmzVhfSNkoG5xhwfveRqsqTemQR1LiWObM_lztAgqQDH4JVzcGuYZJoFLOFPJpDU24T1Y3CqMakQrMWO9KV8GH4auL4tPTHR_woNy2pP8Cl5/s3840/661de12aaccd89db6457898592fae9ff9f7af8e8-3840x2160.jpg" alt="VCT 2026">
+            </div>
+            <div class="card-content">
+                <span class="news-tag-small">ESPORT</span>
+                <span class="news-date">10 FÉVR 2026</span>
+                <h4>VCT EMEA KICKOFF 2026</h4>
+                <p>Suivez les meilleures équipes d'Europe qui s'affrontent pour une place aux Masters Santiago.</p>
+                <a href="https://valorantesports.com/" target="_blank" class="link-arrow">Voir le planning -></a>
+            </div>
+        </article>
+
+        <!-- News 3 : Saison 2026 (Contexte global) -->
+        <article class="news-card">
+            <div class="card-image">
+                <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2c47d35b6a05347e6c9819135e7ccf5c404ace2d-1920x1080.jpg?accountingTag=VAL&auto=format&fit=fill&q=80&w=1184" alt="Saison 2026">
+            </div>
+            <div class="card-content">
+                <span class="news-tag-small">DEV</span>
+                <span class="news-date">15 JAN 2026</span>
+                <h4>BIENVENUE DANS LA SAISON 2026</h4>
+                <p>Replays, refonte de Breeze et nouvelle arme de poing : tout ce qu'il faut savoir sur l'année à venir.</p>
+                <a href="https://playvalorant.com/fr-fr/news/game-updates/valorant-patch-notes-12-00/" target="_blank" class="link-arrow">En savoir plus -></a>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+
+    <script>
+        const burger = document.getElementById('burger-menu');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+        });
+    </script>
+</body>

@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 25e8196bca544b09ac0aacba2de38165dbdd9da5
 
 body {
     font-family: Arial, sans-serif;
@@ -23,5 +26,486 @@ header {
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #8a2be2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a0f16;
+    border-top: 2px solid #8a2be2;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.games-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    max-width: 1400px; 
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.game-card {
+    background: linear-gradient(145deg, #1e1e2f, #2a2a40);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    min-height: 350px; 
+}
+
+.VAL {
+     background: linear-gradient(90deg, #ff4655, #d93644);
+     box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+}
+
+.RES {
+    background: linear-gradient(145deg, #010153, #2a2a40);
+    border: 5px solid rgba(4, 17, 73, 0.959);
+}
+
+.RES:hover {
+    border-color: #15045e;
+}
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-right: 4px solid #8a2be2; 
+    transition: filter 0.3s;
+}
+
+.VAL img {
+    border-right: 4px solid #ff4655;
+}
+
+.RES img {
+    border-right: 4px solid #03093b; 
+}
+
+.game-info {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.RE {
+    background-image: url("../image/Umbrella.webp") ;
+    background-size: cover;
+}
+
+.VL {
+   background-image: url("../image/maxresdefault.jpg") ; 
+   background-size: cover;
+
+}
+
+.game-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.game-info p {
+    font-size: 1.2rem;
+    color: #b8b8d0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #8a2be2, #4b0082);
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.RESI {
+    background: linear-gradient(90deg, #311ddf, #140082);
+    box-shadow: 0 5px 15px rgba(10, 1, 83, 0.4);
+}
+
+.VALO {
+     background: linear-gradient(90deg, #ff4655, #d93644);
+     box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+}
+
+.VALO:hover {
+    background: linear-gradient(90deg, #fc4b5a, #dd3d4a);
+     box-shadow: 0 5px 15px rgba(253, 72, 87, 0.4);
+     transform: translateY(-2px);
+}
+
+.RESI:hover {
+    background: linear-gradient(90deg, #3a27e6, #1901a1);
+    box-shadow: 0 5px 15px rgba(10, 1, 83, 0.4);
+    transform: translateY(-2px);
+}
+
+/* --- NAVBAR VALORANT --- */
+.val-navbar {
+    background-color: #0f1923;
+    /* Noir Valorant */
+    border-bottom: 1px solid #333;
+    padding: 0 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    color: #ece8e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
     color: #ff4655;
 }
+<<<<<<< HEAD
+=======
+
+/* Petit trait rouge au survol */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4655;
+    transition: width 0.3s;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+    width: 100%;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #ece8e1;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #0f1923;
+    border-bottom: 2px solid #ff4655;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.mobile-nav.open {
+    display: flex;
+}
+
+.mobile-nav a {
+    color: #ece8e1;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+}
+
+.mobile-nav a:hover {
+    color: #ff4655;
+}
+
+/* --- PAGE ACTUS (Code complet) --- */
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: #ece8e1;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+    color: #ece8e1;
+    border-left: 8px solid #ff4655;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+/* --- HERO (Gros Article) --- */
+.news-hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0;
+    background: #1a2332;
+    margin-bottom: 70px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.news-hero:hover {
+    transform: translateY(-5px);
+    border-color: #ff4655;
+    box-shadow: 0 15px 40px rgba(255, 70, 85, 0.2);
+}
+
+.news-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+}
+
+.news-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-hero:hover .news-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.news-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ff4655;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.news-content {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #333;
+}
+
+.news-date {
+    color: #ff4655;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.news-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.news-content p {
+    color: #8b9bb4;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-read {
+    display: inline-block;
+    background: #ece8e1;
+    color: #0f1923;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: flex-start;
+    transition: all 0.2s;
+}
+
+.btn-read:hover {
+    background: #ff4655;
+    color: white;
+}
+
+/* --- GRID (Petits Articles) --- */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: #1a2332;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4655;
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.news-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.news-tag-small {
+    background: rgba(255, 70, 85, 0.1);
+    color: #ff4655;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.card-content h4 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    text-transform: uppercase;
+    color: #ece8e1;
+}
+
+.card-content p {
+    color: #8b9bb4;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.link-arrow {
+    color: #ece8e1;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.link-arrow:hover {
+    color: #ff4655;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .val-navbar {
+        padding: 0 20px;
+    }
+
+    .news-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .news-image-wrapper {
+        height: 250px;
+    }
+
+    .news-content {
+        padding: 30px;
+        border-left: none;
+        border-top: 1px solid #333;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .game-card {
+        grid-template-columns: 1fr; 
+        min-height: auto;
+    }
+    
+    .game-card img {
+        height: 250px;
+        border-right: none;
+        border-bottom: 4px solid #8a2be2;
+    }
+    
+    .game-info {
+        padding: 30px;
+    }
+}
+>>>>>>> 25e8196bca544b09ac0aacba2de38165dbdd9da5
