@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 25e8196bca544b09ac0aacba2de38165dbdd9da5
 
 body {
     font-family: Arial, sans-serif;
@@ -210,8 +207,6 @@ main {
 .nav-item.active {
     color: #ff4655;
 }
-<<<<<<< HEAD
-=======
 
 /* Petit trait rouge au survol */
 .nav-item::after {
@@ -508,4 +503,3 @@ main {
         padding: 30px;
     }
 }
->>>>>>> 25e8196bca544b09ac0aacba2de38165dbdd9da5
