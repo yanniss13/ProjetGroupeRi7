@@ -168,7 +168,6 @@ main {
 /* --- NAVBAR VALORANT --- */
 .val-navbar {
     background-color: #0f1923;
-    /* Noir Valorant */
     border-bottom: 1px solid #333;
     padding: 0 40px;
     height: 80px;
@@ -269,7 +268,7 @@ main {
     color: #ff4655;
 }
 
-/* --- PAGE ACTUS (Code complet) --- */
+/* --- PAGE ACTUS --- */
 .news-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -456,7 +455,6 @@ main {
     color: #ff4655;
 }
 
-/* --- RESPONSIVE MOBILE --- */
 @media (max-width: 900px) {
     .nav-links {
         display: none;
