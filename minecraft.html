@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actu Minecraft | Hub de Mises à jour</title>
+    <title>Actu Minecraft | Hub 2026</title>
     <link rel="stylesheet" href="./assets/css/minecraft.css">
 </head>
 <body>
- <nav class="navbar">
-    <div class="nav-container">
-        <a href="#" class="nav-logo">InfoGaming</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="minecraft.html">Minecraft</a></li>
-            <li><a href="RE.html">Resident-Evil</a></li>
-            <li><a href="Valorant.html">Valorant</a></li>
-        </ul>
-    </div>
-</nav>
+
+    <input type="checkbox" id="dark-mode-toggle" style="display: none;">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">InfoGaming</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="minecraft.html">Minecraft</a></li>
+                <li><a href="#">Resident-Evil</a></li>
+                <li>
+                    <label for="dark-mode-toggle" class="dark-mode-label">
+                        <span class="moon">🌙</span>
+                        <span class="sun">☀️</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <header>
         <h1>ACTU MINECRAFT</h1>
@@ -25,74 +33,94 @@
     </header>
 
     <div class="container">
-        
-        <section class="main-news">
-            <span class="version-badge">Dernière version stable</span>
-            <h2>Minecraft 1.21 : Tricky Trials</h2>
-            <p>Sortie le 13 juin 2024, cette mise à jour transforme l'aventure souterraine en un véritable défi technique et de combat.</p>
-            <ul>
-                <li><strong>Trial Chambers :</strong> Des donjons complexes pour tester vos limites.</li>
-                <li><strong>Le Breeze :</strong> Un adversaire aérien redoutable.</li>
-                <li><strong>Le Crafter :</strong> La révolution de l'automatisation en Redstone.</li>
-                <li><strong>La Masse :</strong> Une arme puissante basée sur la verticalité.</li>
-            </ul>
-        </section>
 
-        <section>
-            <h2>🛠️ Labo de Développement</h2>
-            <p>Les versions de test (Snapshots) permettent de découvrir le futur de Minecraft avant tout le monde.</p>
-            <div class="alert-box">
-                <strong>Attention :</strong> Les snapshots sont instables. Ne les utilisez pas sur vos mondes principaux sans une sauvegarde préalable !
+        <section class="update-spotlight">
+            <span class="version-badge">Nouveauté : Winter Drop</span>
+            <h2>Le Jardin Pâle</h2>
+            <p>Une nouvelle ambiance mystérieuse avec ce biome désaturé et silencieux.</p>
+            
+            <div class="features-grid">
+                <article>
+                    <h3>Le Creaking</h3>
+                    <p>Un monstre qui ne bouge que lorsqu'on ne le regarde pas. Détruisez son cœur pour l'éliminer.</p>
+                </article>
+                <article>
+                    <h3>Bois Pâle</h3>
+                    <p>Nouveau matériau blanc parfait pour des constructions modernes ou lugubres.</p>
+                </article>
             </div>
         </section>
 
-        <section>
-            <h2>📅 Historique des versions</h2>
+        <section class="video-news">
+            <h2>Dernier Trailer</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/M23gY-Wp3zY" title="Minecraft Update" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="main-news">
+            <span class="version-badge">Version 1.21 stable</span>
+            <h2>Minecraft : Tricky Trials</h2>
+            <ul>
+                <li><strong>Trial Chambers :</strong> Donjons procéduraux.</li>
+                <li><strong>Le Breeze :</strong> Mob de vent.</li>
+                <li><strong>Le Crafter :</strong> Craft automatique.</li>
+            </ul>
+        </section>
+
+        <section class="poll-section">
+            <h2>📊 Sondage</h2>
+            <input type="checkbox" id="poll-trigger" style="display: none;">
+            
+            <div class="poll-content">
+                <p>Quel ajout préférez-vous ?</p>
+                <form>
+                    <label><input type="radio" name="feat"> Le Crafter</label><br>
+                    <label><input type="radio" name="feat"> Le Creaking</label><br>
+                    <label for="poll-trigger" class="btn-vote">Voter</label>
+                </form>
+            </div>
+
+            <div class="poll-thanks">
+                <p>✅ Merci pour votre vote !</p>
+                <div class="progress-bar"><div class="fill" style="width: 65%;"></div></div>
+                <small>Le Crafter : 65%</small>
+            </div>
+        </section>
+
+        <section class="history">
+            <h2>📅 Historique</h2>
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
                             <th>Version</th>
-                            <th>Nom de l'Update</th>
-                            <th>Caractéristique phare</th>
+                            <th>Nom</th>
+                            <th>Phare</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>1.21</strong></td>
-                            <td>Tricky Trials</td>
-                            <td>Chambres d'épreuves & Crafter</td>
-                        </tr>
-                        <tr>
-                            <td><strong>1.20</strong></td>
-                            <td>Trails & Tales</td>
-                            <td>Archéologie & Biome Cerisiers</td>
-                        </tr>
-                        <tr>
-                            <td><strong>1.19</strong></td>
-                            <td>The Wild Update</td>
-                            <td>Le Warden & Mangroves</td>
-                        </tr>
+                        <tr><td>Winter Drop</td><td>Bundles</td><td>Sacs</td></tr>
+                        <tr><td>1.21</td><td>Tricky Trials</td><td>Crafter</td></tr>
+                        <tr><td>1.20</td><td>Trails & Tales</td><td>Archéologie</td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section>
-            <h2>🔔 Restez connecté</h2>
-            <p>Pour ne rien manquer :</p>
-            <ul>
-                <li>Abonnez-vous au <strong>Minecraft Monthly</strong> sur YouTube.</li>
-                <li>Consultez régulièrement le site officiel <strong>Minecraft.net</strong>.</li>
-                <li>Activez les notifications sur le <strong>Launcher officiel</strong>.</li>
-            </ul>
+        <section class="newsletter">
+            <h2>📩 Newsletter</h2>
+            <form>
+                <input type="email" placeholder="votre@email.com" required>
+                <button type="submit" class="btn-vote">S'abonner</button>
+            </form>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 - Fan Site Minecraft Actualités. <br> 
-        Ce site n'est pas affilié à Mojang Studios ou Microsoft.</p>
+        <p>&copy; 2026 - InfoGaming. <br>
+        Non affilié à Mojang ou Microsoft.</p>
     </footer>
 
 </body>
